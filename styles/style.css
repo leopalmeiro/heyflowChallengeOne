@@ -1,10 +1,5 @@
-$brand: #0080d3;
-$grey-25: #e6e6e6;
-$grey-5: #fcfcfc;
 
-*, *:before, *:after {
-    box-sizing: border-box;
-  }
+/* add color and variables and reset */
 
 /* Hide the default checkbox input */
 .custom-checkbox input {
@@ -34,14 +29,4 @@ $grey-5: #fcfcfc;
     background-color: green; /* Background color when checked */
     border-color: black;
     color: red; /* Color for the SVG when checked */
-  }
-  
-  /* Show the checked icon when the checkbox is checked */
-  .custom-checkbox input:checked + .checkbox-icon .checked {
-    display: block;
-  }
-  
-  /* Hide the unchecked icon when the checkbox is checked */
-  .custom-checkbox input:checked + .checkbox-icon .unchecked {
-    display: none;
   }

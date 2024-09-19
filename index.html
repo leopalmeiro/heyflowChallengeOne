@@ -9,16 +9,16 @@
 
 </head>
 <body>
-        
     <div class="container">
-
+        <div>
         <input type="checkbox" id="checkbox1">
-
-        <label class="container custom-checkbox">
-            <input type="checkbox" />
+    </div>
+    <div>
+        <label class="custom-checkbox">
+            <input type="checkbox" id="checkbox2"/>
             <span class="checkbox-icon">
-                <!-- Inline SVG for checked state -->
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                <!-- Iadd inline svg because of  currentColor-->
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none"></rect>
                     <polyline
                     points="216 72.005 104 184 48 128.005"
@@ -31,9 +31,8 @@
                 </svg>
               </span>
           </label>
-
     </div>
-
+</div>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

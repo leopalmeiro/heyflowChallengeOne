@@ -1,14 +1,32 @@
 
 .container {
-    display: flex;                  /* Enable flexbox layout */
-    flex-direction: column;        /* Arrange items in a column */
-
+    display: flex;  
+    flex-direction: column; 
+    gap: 10px;
   }
-/* Hide the default checkbox input */
-.custom-checkbox input {
-    display: none;
+
+
+  input[type="checkbox"]{
+    width: 30px; 
+    height: 30px; 
+    border-radius: 3px;
+  }
+
+
+  /* Visually hide the checkbox input, but keep it focusable */
+  .custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
   }
   
+    /* Focus styles to indicate the element is focused */
+    .custom-checkbox input[type="checkbox"]:focus-visible + .checkbox-icon {
+      outline: 2px solid black  ;
+      outline-offset: 2px;
+    }
+
   /* Style the custom checkbox container */
   .custom-checkbox {
     display: inline-block;
@@ -17,8 +35,8 @@
   
   /* Checkbox container with background color */
   .custom-checkbox .checkbox-icon {
-    width: 15px; /* Adjust size as needed */
-    height: 15px; /* Adjust size as needed */
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 3px;

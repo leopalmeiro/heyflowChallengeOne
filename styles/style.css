@@ -60,12 +60,7 @@ input[type="checkbox"]{
 }
 
 
-#checkbox1:focus ~ .custom-checkbox .checkbox-icon {
+#checkbox1:focus-visible + .custom-checkbox .checkbox-icon {
   outline: 2px solid black  ;
   outline-offset: 2px;
-}
-
-#checkbox2:focus-visible ~ #checkbox1 {
-  outline: 2px solid #FF5722; /* Adicionar um contorno laranja ao checkbox padrão */
-
 }

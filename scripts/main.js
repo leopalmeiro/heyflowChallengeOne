@@ -15,8 +15,8 @@ function addFocus() {
 
 // Function to remove 'focused' class from both checkboxes
 function removeFocus() {
-  checkbox1.classList.remove('focused');
-  checkbox2.classList.remove('focused');
+  //checkbox1.classList.remove('focused');
+  //checkbox2.classList.remove('focused');
 }
 
 // Add event listeners to both checkboxes
@@ -24,8 +24,8 @@ checkbox1.addEventListener('click', syncClickCheckboxes);
 checkbox2.addEventListener('click', syncClickCheckboxes);
 
 // Add focus and blur event listeners
-checkbox1.addEventListener('focus', addFocus);
-checkbox1.addEventListener('blur', removeFocus);
+//checkbox1.addEventListener('focus', addFocus);
+//checkbox1.addEventListener('blur', removeFocus);
 
-checkbox2.addEventListener('focus', addFocus);
-checkbox2.addEventListener('blur', removeFocus);
+//checkbox2.addEventListener('focus', addFocus);
+//checkbox2.addEventListener('blur', removeFocus);

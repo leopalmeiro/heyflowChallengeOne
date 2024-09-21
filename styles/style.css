@@ -19,8 +19,6 @@
 input[type="checkbox"] {
   width: 30px;
   height: 30px;
-  border-radius: 2px;
-  border: 1px solid var(--primary-color);
 }
 
 input[type="checkbox"]:focus {

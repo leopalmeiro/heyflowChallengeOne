@@ -65,8 +65,8 @@ input[type="checkbox"] {
   outline-offset: 2px;
 }
 
-/* focus style 
-.custom-checkbox input[type="checkbox"]:focus + .checkbox-icon {
+/* focus style */
+.custom-checkbox.no-checkbox1 input[type="checkbox"]:focus-visible + .checkbox-icon {
   outline: 2px solid black;
   outline-offset: 2px;
-}*/
+}

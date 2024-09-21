@@ -1,6 +1,7 @@
 // Get the checkbox elements
 const checkbox1 = document.getElementById('checkbox1');
 const checkbox2 = document.getElementById('checkbox2');
+const checkbox2Label = document.querySelector('.custom-checkbox');
 
 // Function to sync checkboxes
 function syncClickCheckboxes() {
@@ -8,9 +9,12 @@ function syncClickCheckboxes() {
 }
 
 // Add event listeners to both checkboxes
-if(checkbox1){
+if (checkbox1) {
   checkbox1.addEventListener('click', syncClickCheckboxes);
   checkbox2.addEventListener('click', syncClickCheckboxes);
+} else {
+  checkbox2Label.classList.add('no-checkbox1');
 }
+
 
 

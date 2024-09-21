@@ -73,7 +73,7 @@ input[type="checkbox"]:focus {
   outline-offset: 2px;
 }
 
-/* focus style */
+/* focus style when checkbox 1 is not present*/
 .custom-checkbox.no-checkbox1 input[type="checkbox"]:focus-visible+.checkbox-icon {
   outline: 2px solid var(--checkbox-focus-color);
   outline-offset: 2px;

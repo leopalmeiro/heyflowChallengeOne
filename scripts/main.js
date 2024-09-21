@@ -1,4 +1,4 @@
-// Get the checkbox elements
+// Get the elements
 const checkbox1 = document.getElementById('checkbox1');
 const checkbox2 = document.getElementById('checkbox2');
 const checkbox2Label = document.querySelector('.custom-checkbox');

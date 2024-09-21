@@ -1,3 +1,10 @@
+:root {
+  --checkbox-focus-color: blue;
+  --primary-color: black;
+  --secondary-color: white;
+  /* Green */
+}
+
 *,
 *:before,
 *:after {
@@ -13,7 +20,12 @@
 input[type="checkbox"] {
   width: 30px;
   height: 30px;
-  border-radius: 3px;
+  border-radius: 2px;
+  border: 1px solid var(--primary-color);
+}
+
+input[type="checkbox"]:focus {
+  outline-color: var(--checkbox-focus-color);
 }
 
 
@@ -34,19 +46,18 @@ input[type="checkbox"] {
   width: 60px;
   height: 60px;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid var(--primary-color);
   border-radius: 3px;
   position: relative;
-  color: #000;
-  border-color: black;
+  color: var(--primary-color);
   margin: 3px;
 }
 
 /* When the checkbox is checked */
 .custom-checkbox input:checked+.checkbox-icon {
-  background-color: black;
-  border-color: black;
-  color: white;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* Hide the checkmark by default */
@@ -61,12 +72,12 @@ input[type="checkbox"] {
 
 /* add focus on custom checkbox2 if checkbox 1 is checked*/
 #checkbox1:focus-visible+.custom-checkbox .checkbox-icon {
-  outline: 2px solid black;
+  outline: 2px solid var(--checkbox-focus-color);
   outline-offset: 2px;
 }
 
 /* focus style */
-.custom-checkbox.no-checkbox1 input[type="checkbox"]:focus-visible + .checkbox-icon {
-  outline: 2px solid black;
+.custom-checkbox.no-checkbox1 input[type="checkbox"]:focus-visible+.checkbox-icon {
+  outline: 2px solid var(--checkbox-focus-color);
   outline-offset: 2px;
 }

@@ -1,64 +1,71 @@
 
 .container {
-    display: flex;  
-    flex-direction: column; 
-    gap: 10px;
-  }
+  display: flex;  
+  flex-direction: column; 
+  gap: 10px;
+}
 
 
-  input[type="checkbox"]{
-    width: 30px; 
-    height: 30px; 
-    border-radius: 3px;
-  }
+input[type="checkbox"]{
+  width: 30px; 
+  height: 30px; 
+  border-radius: 3px;
+}
 
 
-  /* Visually hide the checkbox input, but keep it focusable */
-  .custom-checkbox input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-    /* Focus styles to indicate the element is focused */
-    .custom-checkbox input[type="checkbox"]:focus-visible + .checkbox-icon {
-      outline: 2px solid black  ;
-      outline-offset: 2px;
-    }
+/* Visually hide the checkbox input, but keep it focusable */
+.custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-  /* Style the custom checkbox container */
-  .custom-checkbox {
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  /* Checkbox container with background color */
-  .custom-checkbox .checkbox-icon {
-    width: 60px; /* Adjust size as needed */
-    height: 60px; /* Adjust size as needed */
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    position: relative;
-    color: #000; /* Default color for the SVG */
-    border-color: black;
-    margin: 3px;
-  }
-  
-  /* When the checkbox is checked */
-  .custom-checkbox input:checked + .checkbox-icon {
-    background-color: black; /* Background color when checked */
-    border-color: black;
-    color: white; /* Color for the SVG when checked */
-  }
 
-  /* Hide the checkmark by default */
+
+/* Style the custom checkbox container */
+.custom-checkbox {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Checkbox container with background color */
+.custom-checkbox .checkbox-icon {
+  width: 60px; /* Adjust size as needed */
+  height: 60px; /* Adjust size as needed */
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+  color: #000; /* Default color for the SVG */
+  border-color: black;
+  margin: 3px;
+}
+
+/* When the checkbox is checked */
+.custom-checkbox input:checked + .checkbox-icon {
+  background-color: black; /* Background color when checked */
+  border-color: black;
+  color: white; /* Color for the SVG when checked */
+}
+
+/* Hide the checkmark by default */
 .custom-checkbox .checkmark {
-    display: none;
-  }
-  
-  /* Show the checkmark when the checkbox is checked */
-  .custom-checkbox input:checked + .checkbox-icon .checkmark {
-    display: inline-block;
-  }
+  display: none;
+}
+
+/* Show the checkmark when the checkbox is checked */
+.custom-checkbox input:checked + .checkbox-icon .checkmark {
+  display: inline-block;
+}
+
+
+#checkbox1:focus ~ .custom-checkbox .checkbox-icon {
+  outline: 2px solid black  ;
+  outline-offset: 2px;
+}
+
+#checkbox2:focus-visible ~ #checkbox1 {
+  outline: 2px solid #FF5722; /* Adicionar um contorno laranja ao checkbox padrão */
+
+}

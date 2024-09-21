@@ -8,5 +8,9 @@ function syncClickCheckboxes() {
 }
 
 // Add event listeners to both checkboxes
-checkbox1.addEventListener('click', syncClickCheckboxes);
-checkbox2.addEventListener('click', syncClickCheckboxes);
+if(checkbox1){
+  checkbox1.addEventListener('click', syncClickCheckboxes);
+  checkbox2.addEventListener('click', syncClickCheckboxes);
+}
+
+

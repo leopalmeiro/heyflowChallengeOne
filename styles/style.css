@@ -1,14 +1,13 @@
-
 .container {
-  display: flex;  
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
 
-input[type="checkbox"]{
-  width: 30px; 
-  height: 30px; 
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
   border-radius: 3px;
 }
 
@@ -21,8 +20,6 @@ input[type="checkbox"]{
   height: 0;
 }
 
-
-
 /* Style the custom checkbox container */
 .custom-checkbox {
   display: inline-block;
@@ -31,22 +28,27 @@ input[type="checkbox"]{
 
 /* Checkbox container with background color */
 .custom-checkbox .checkbox-icon {
-  width: 60px; /* Adjust size as needed */
-  height: 60px; /* Adjust size as needed */
+  width: 60px;
+  /* Adjust size as needed */
+  height: 60px;
+  /* Adjust size as needed */
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 3px;
   position: relative;
-  color: #000; /* Default color for the SVG */
+  color: #000;
+  /* Default color for the SVG */
   border-color: black;
   margin: 3px;
 }
 
 /* When the checkbox is checked */
-.custom-checkbox input:checked + .checkbox-icon {
-  background-color: black; /* Background color when checked */
+.custom-checkbox input:checked+.checkbox-icon {
+  background-color: black;
+  /* Background color when checked */
   border-color: black;
-  color: white; /* Color for the SVG when checked */
+  color: white;
+  /* Color for the SVG when checked */
 }
 
 /* Hide the checkmark by default */
@@ -55,12 +57,12 @@ input[type="checkbox"]{
 }
 
 /* Show the checkmark when the checkbox is checked */
-.custom-checkbox input:checked + .checkbox-icon .checkmark {
+.custom-checkbox input:checked+.checkbox-icon .checkmark {
   display: inline-block;
 }
 
 
-#checkbox1:focus-visible + .custom-checkbox .checkbox-icon {
-  outline: 2px solid black  ;
+#checkbox1:focus-visible+.custom-checkbox .checkbox-icon {
+  outline: 2px solid black;
   outline-offset: 2px;
 }
